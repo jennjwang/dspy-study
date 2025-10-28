@@ -8,7 +8,6 @@ body:
     attributes:
       value: |
         ## 🔧 Maintenance
-        Surface refactors, dependency upgrades, CI tweaks, or other chores that keep the project healthy.
 
   - type: checkboxes
     id: checklist

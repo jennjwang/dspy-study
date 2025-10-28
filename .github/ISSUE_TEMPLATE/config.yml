@@ -1,6 +1,6 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 📚 DSPy documentation
+  - name: DSPy documentation
     url: https://dspy.ai/
     about: Review guides, tutorials, and API reference before opening an issue.
   - name: 💬 DSPy Discord

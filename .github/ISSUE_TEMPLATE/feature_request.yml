@@ -8,7 +8,6 @@ body:
     attributes:
       value: |
         ## 🚀 Feature Request
-        Help us understand the problem and why your idea would make this project better.
 
   - type: checkboxes
     id: checklist

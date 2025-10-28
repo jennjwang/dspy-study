@@ -8,7 +8,6 @@ body:
     attributes:
       value: |
         ## ✅ Testing / QA
-        Share any testing or quality concerns so we can keep the build reliable and well-covered.
 
   - type: checkboxes
     id: checklist

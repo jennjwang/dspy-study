@@ -8,8 +8,6 @@ body:
     attributes:
       value: |
         ## 🧹 Refactor Proposal
-        Describe the code improvements that would make the project cleaner, safer, or easier to extend.
-
   - type: checkboxes
     id: checklist
     attributes:
