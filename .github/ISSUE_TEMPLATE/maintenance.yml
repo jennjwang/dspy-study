@@ -1,0 +1,56 @@
+---
+name: Maintenance
+description: Help improve performance, usability and/or consistency.
+title: "[MNT]: "
+labels: [Maintenance]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔧 Maintenance
+        Surface refactors, dependency upgrades, CI tweaks, or other chores that keep the project healthy.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues to ensure this maintenance work is not already tracked.
+          required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Maintenance category
+      description: What kind of maintenance work is this?
+      options:
+        - Build tooling
+        - CI / automation
+        - Dependency or model update
+        - Refactor / code quality
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide 1-2 short sentences that describe what should change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: fix
+    attributes:
+      label: Proposed fix
+      description: Outline the steps or tasks required to complete this work.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Links to related issues, PRs, dashboards, or documentation.

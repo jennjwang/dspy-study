@@ -1,0 +1,50 @@
+---
+name: Testing / QA
+description: Report flaky tests, coverage gaps, or quality assurance findings.
+title: "[QA]: "
+labels: [testing]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✅ Testing / QA
+        Share any testing or quality concerns so we can keep the build reliable and well-covered.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-checks
+      options:
+        - label: I have searched existing issues to ensure this testing problem is not already tracked.
+          required: true
+        - label: I reproduced this issue on the latest version or default branch.
+          required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: QA category
+      description: What type of testing issue are you reporting?
+      options:
+        - Failing test
+        - Flaky test
+        - Missing coverage
+        - Test infrastructure
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a concise description of the testing issue.
+      placeholder: "Example: Integration test `tests/integration/test_api.py::test_upload` fails intermittently."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Related issues, PRs, or references that help us investigate.

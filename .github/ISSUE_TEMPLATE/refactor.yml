@@ -1,0 +1,47 @@
+---
+name: Refactor
+description: Propose structural changes that improve code clarity, design, or maintainability.
+title: "[Refactor]: "
+labels: [refactor]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🧹 Refactor Proposal
+        Describe the code improvements that would make the project cleaner, safer, or easier to extend.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have searched existing issues to ensure this refactor is not already tracked.
+          required: true
+        - label: I have confirmed this change does not introduce new features or bug fixes.
+          required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What problem does the current code have (complexity, duplication, technical debt, etc.)?
+      placeholder: "Example: `service.py` mixes IO with business logic, making it hard to mock in tests."
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Outline the modules, packages, or components impacted by this refactor.
+      placeholder: |
+        * `module/handler.py`
+        * `tests/unit/test_handler.py`
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Links to related issues, PRs, dashboards, or documentation.

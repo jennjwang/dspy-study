@@ -1,0 +1,56 @@
+---
+name: Documentation
+description: Suggest wording, structure, or content improvements to the documentation.
+title: "[Docs]: "
+labels: [Documentation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📚 Documentation Improvement
+        Tell us what needs to change in the docs so we can keep them accurate and easy to follow.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues and discussions for similar documentation feedback.
+          required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Documentation area
+      description: Where in the docs does the issue occur?
+      options:
+        - Getting started / tutorials
+        - Guides / concepts
+        - API reference
+        - Examples / notebooks
+        - Release notes / changelog
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Documentation link
+      description: Link to the relevant page or section.
+      placeholder: https://example.com/docs/...
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or incorrect?
+      description: Share the sentences, steps, or code snippets that are confusing or outdated.
+      placeholder: "Example: The quickstart references a removed configuration flag..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Screenshots, PRs, or references that help explain the change.

@@ -1,4 +1,3 @@
-
 name: Bug Report
 description: Report a bug in the project
 title: "[Bug] "
@@ -35,4 +34,3 @@ body:
       description: "Tell us your DSPy version."
     validations:
       required: true
-
