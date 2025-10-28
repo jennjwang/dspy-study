@@ -4,10 +4,6 @@ description: Propose structural changes that improve code clarity, design, or ma
 title: "[Refactor]: "
 labels: [refactor]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## 🧹 Refactor Proposal
   - type: checkboxes
     id: checklist
     attributes:

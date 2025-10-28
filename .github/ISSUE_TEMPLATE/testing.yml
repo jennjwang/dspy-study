@@ -4,11 +4,6 @@ description: Report flaky tests, coverage gaps, or quality assurance findings.
 title: "[QA]: "
 labels: [testing]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## ✅ Testing / QA
-
   - type: checkboxes
     id: checklist
     attributes:

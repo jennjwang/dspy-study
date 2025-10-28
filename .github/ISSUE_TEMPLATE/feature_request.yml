@@ -4,11 +4,6 @@ description: Suggest a new feature or improvement for this project.
 title: "[Feature]: "
 labels: [enhancement]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## 🚀 Feature Request
-
   - type: checkboxes
     id: checklist
     attributes:

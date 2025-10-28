@@ -4,11 +4,6 @@ description: Help improve performance, usability and/or consistency.
 title: "[MNT]: "
 labels: [Maintenance]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## 🔧 Maintenance
-
   - type: checkboxes
     id: checklist
     attributes:
