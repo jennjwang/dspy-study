@@ -4,16 +4,6 @@ description: Report flaky tests, coverage gaps, or quality assurance findings.
 title: "[QA]: "
 labels: [testing]
 body:
-  - type: checkboxes
-    id: checklist
-    attributes:
-      label: Pre-checks
-      options:
-        - label: I have searched existing issues to ensure this testing problem is not already tracked.
-          required: true
-        - label: I reproduced this issue on the latest version or default branch.
-          required: true
-
   - type: dropdown
     id: category
     attributes:
